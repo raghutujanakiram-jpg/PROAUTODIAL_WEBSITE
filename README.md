@@ -18,7 +18,7 @@ Frontend implementation for ProAutoDial Telephony Services (OPC) Private Limited
 - Countries / Global Reach
 - Blog / Insights
 - Case Studies
-- Testimonials and supplied client reference names
+- Testimonials and supplied client reference logos (10 supplied brand assets)
 - About Us / Founder
 - Careers
 - Contact
