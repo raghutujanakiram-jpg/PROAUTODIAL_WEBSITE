@@ -40,6 +40,15 @@ Public website for ProAutoDial Telephony Services (OPC) Private Limited.
 - Root directory: `.`
 - `vercel.json` rewrites direct page and nested industry / insight routes to `index.html` for SPA routing.
 
+## WhatsApp contact and chatbot
+
+- The floating WhatsApp button opens a click-to-chat conversation with the ProAutoDial contact number `+91 8898 724 365` (`918898724365` in the WhatsApp link).
+- The button includes a prefilled first message about AI voice agents, the call-centre platform, use cases and demo options.
+- This website shortcut does not itself create an automated bot or confirm that the number is registered on WhatsApp.
+- Automated product-knowledge replies require a verified WhatsApp Business Platform number or approved WhatsApp provider, an inbound message webhook, secure credentials, and a private, approved ProAutoDial product-knowledge source.
+- Do not place WhatsApp access tokens, Meta app secrets, OpenAI keys or private product documents in this public repository. Store service credentials in Vercel encrypted environment variables and keep the knowledge source in a private authorised repository/vector store.
+- Until the channel and knowledge source pass end-to-end tests, messages must be handled by the ProAutoDial team rather than being represented as answered by an AI bot.
+
 ## Enquiry handling
 
 - Contact and Demo Request forms validate in the browser and open a prefilled email draft addressed to `contact@proautodial.in`.
