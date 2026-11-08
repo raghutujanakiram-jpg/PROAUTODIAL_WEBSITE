@@ -1,59 +1,68 @@
-# ProAutoDial Website
+# ProAutoDial Public Website
 
-Frontend implementation for ProAutoDial Telephony Services (OPC) Private Limited.
+Public website for ProAutoDial Telephony Services (OPC) Private Limited.
 
-## Stack
-- Responsive static multi-page SPA (vanilla JavaScript + CSS)
-- Vercel path rewrites for direct page access
-- Original supplied ProAutoDial logo and supplied founder portrait
-- Page navigation and page-specific UI interactions without a backend dependency
+## Experience
 
-## Pages
-- Home
-- Solutions
-- Voice Agents
-- Industries and industry detail routes
-- Use Cases with selectable workflow steps and campaign tabs
-- Pricing with exactly three packages; INR default and a billing-location currency selector (AED, GBP, EUR, KWD, SGD, USD)
-- Countries / Global Reach
-- Blog / Insights
-- Case Studies
-- Testimonials and supplied client reference logos (10 supplied brand assets)
-- About Us / Founder
-- Careers
-- Contact
-- Request Demo
-- Live Call Simulator preview
-- ProAutoDial Voice for Good
-- Initial Arabic RTL overview for UAE / Middle East audiences at /ar
+- Responsive, multi-page public website built with vanilla JavaScript and CSS.
+- Shared ProAutoDial visual system: red and white palette, premium navy typography, consistent page heroes, image-led sections, rounded content cards and responsive navigation.
+- Original supplied ProAutoDial logo and founder portrait.
+- Approved Home and Use Cases reference artwork.
+- Accessible navigation controls, focus styles and reduced-motion support.
 
-## Local Preview
-Serve the repository root with any static server, or open `index.html` in a browser. Use a local server to test the path-based pages.
+## Public pages and routes
+
+- Home: `/`
+- Solutions: `/solutions`
+- AI Voice Agents: `/voice-agents`
+- Industries index: `/industries`
+- Industry detail pages: `/industries/real-estate`, `/industries/healthcare`, `/industries/dental-clinics`, `/industries/education`, `/industries/banking-finance`, `/industries/insurance`, `/industries/travel-hospitality`, `/industries/restaurants`, `/industries/retail-ecommerce`, `/industries/recruitment-hr`, `/industries/bpo-customer-support`
+- Use Cases: `/use-cases`
+- Pricing: `/pricing`
+- Countries / Global Markets: `/countries`
+- Insights: `/blog`
+- Insight articles: `/blog/ai-voice-agent-readiness`, `/blog/human-handoff`, `/blog/industry-campaigns`
+- Workflow Blueprints: `/case-studies`
+- Client References: `/testimonials`
+- About Us: `/about-us`
+- Careers: `/careers`
+- Contact: `/contact`
+- Request Demo: `/request-demo`
+- Live Call Simulator Preview: `/live-demo`
+- ProAutoDial Voice for Good: `/voice-for-good`
+- Arabic overview: `/ar`
 
 ## Vercel
+
 - Framework preset: Other
 - Build command: leave blank
 - Output directory: `.`
 - Root directory: `.`
-- `vercel.json` rewrites paths to `index.html` for SPA route handling.
+- `vercel.json` rewrites direct page and nested industry / insight routes to `index.html` for SPA routing.
 
-## Current implementation boundaries
-- Contact and demo forms validate in the browser only. They do not transmit or store personal data.
-- Live call simulator is a scripted preview. No microphone access, actual call or recording is performed.
-- Pricing uses custom quotes because final approved package rates have not yet been provided.
-- Customer case summaries are workflow descriptions, not fabricated testimonials or performance claims.
-- Social profile and review destinations remain to be connected after official URLs are confirmed.
-- Arabic implementation currently covers an initial RTL overview. Full page-by-page UAE / Middle East Arabic localisation and native review are still required.
+## Enquiry handling
 
-## Production readiness work
-1. Connect enquiries to the approved backend / CRM, including consent, privacy and spam protection.
-2. Integrate AI speech services, telephony, recordings, call transfer, campaigns and analytics.
-3. Load verified production dashboard metrics and approved customer stories.
-4. Confirm commercial prices, billing location rules and local tax presentation.
-5. Connect official social profile and review URLs.
-6. Complete Arabic localisation and native linguistic QA page by page.
-7. Review legal, telecom, privacy, aviation and emergency-response statements before public release.
-8. Treat disaster response, toll-free hotline and drone delivery operations as conditional on feasibility, partner availability, safety and local authorisation.
+- Contact and Demo Request forms validate in the browser and open a prefilled email draft addressed to `contact@proautodial.in`.
+- The visitor must review and send the email in their own mail application.
+- The website does not store form submissions or send them to a CRM. Connect an approved backend / CRM before describing these forms as direct online lead capture.
+- Phone actions use the public ProAutoDial contact number shown in the site header and contact page.
 
-## Voice for Good operational statement
-All free services are subject to eligibility verification, terms and conditions, technical feasibility, resource availability and applicable laws. Emergency hotline activation, mobile support vehicles, connectivity and field operations require coordination with relevant authorities. ProAutoDial is supplementary communication support and does not replace official emergency services or government disaster-response systems. Commercial drone operations require aviation permissions and qualified operators.
+## Product demonstrations and commercial scope
+
+- Live Call Simulator is a scripted browser preview. It does not access a microphone, place an actual call or create a recording.
+- Pricing contains three service packages with custom quotes. The currency selector changes the quote currency label by billing location; it does not perform automatic currency conversion.
+- Customer stories and workflow blueprints are illustrative workflow examples, not fabricated customer testimonials or performance claims.
+- Supplied client logos are reference assets. Publishing remains subject to each brand’s permissions and current relationship status.
+- Careers lists capability areas where professional interest is welcome; it does not assert that listed vacancies are currently open.
+- Country listings identify target markets. They do not imply local number availability, telecom licensing or activated operations.
+
+## Voice for Good
+
+All free services are subject to eligibility verification, terms and conditions, technical feasibility, resource availability and applicable laws. Emergency hotline activation, mobile support, connectivity and field operations require coordination with relevant authorities. ProAutoDial Voice for Good is supplementary communication support and does not replace official emergency services or government disaster-response systems. Commercial drone operations require aviation permissions and qualified operators.
+
+## Release boundaries
+
+- Public production site only: `www.proautodial.in`.
+- The ProAutoDial Admin repository, Admin database and Admin Vercel project are separate and are not part of this public-site release.
+- Legal, privacy, cookie and telecom compliance copy must be reviewed and approved by the accountable business/legal owners before being presented as formal policy.
+- Full Arabic localisation beyond the overview page requires translation and native linguistic review.
