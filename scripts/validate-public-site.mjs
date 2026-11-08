@@ -43,5 +43,7 @@ assert.ok(existsSync('assets/proautodial-usecases-hero-panel.jpg'), 'approved Us
 assert.ok(scriptMatch[1].includes('data-mailto-form'), 'enquiry forms must use the email-draft flow');
 assert.ok(scriptMatch[1].includes('mailto:contact@proautodial.in'), 'enquiry destination must be present');
 assert.ok(scriptMatch[1].includes('function notfound()'), 'unknown routes must have a not-found page');
+assert.ok(scriptMatch[1].includes('https://wa.me/918898724365?text='), 'floating WhatsApp contact must target the approved ProAutoDial number');
+assert.ok(scriptMatch[1].includes('function whatsappFloat()'), 'floating WhatsApp control must be mounted');
 
 console.log('Public website validation passed: JavaScript syntax, routes, rewrites, assets and enquiry flow.');
