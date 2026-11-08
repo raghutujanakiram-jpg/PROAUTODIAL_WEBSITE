@@ -1,0 +1,23 @@
+{
+  "outputDirectory": ".",
+  "rewrites": [
+    { "source": "/solutions/:path*", "destination": "/index.html" },
+    { "source": "/voice-agents", "destination": "/index.html" },
+    { "source": "/industries/:path*", "destination": "/index.html" },
+    { "source": "/use-cases", "destination": "/index.html" },
+    { "source": "/pricing", "destination": "/index.html" },
+    { "source": "/countries", "destination": "/index.html" },
+    { "source": "/blog", "destination": "/index.html" },
+    { "source": "/resources", "destination": "/index.html" },
+    { "source": "/case-studies", "destination": "/index.html" },
+    { "source": "/testimonials", "destination": "/index.html" },
+    { "source": "/about-us", "destination": "/index.html" },
+    { "source": "/careers", "destination": "/index.html" },
+    { "source": "/contact", "destination": "/index.html" },
+    { "source": "/request-demo", "destination": "/index.html" },
+    { "source": "/live-demo", "destination": "/index.html" },
+    { "source": "/voice-for-good", "destination": "/index.html" },
+    { "source": "/ar/:path*", "destination": "/index.html" },
+    { "source": "/ar", "destination": "/index.html" }
+  ]
+}
